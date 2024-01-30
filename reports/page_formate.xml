@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="paperformat_emergency" model="report.paperformat">
+            <field name="name">Page Formate Common For Advanced</field>
+			<field name="default" eval="True" />
+			<field name="format">A4</field>
+			<field name="orientation">Portrait</field>
+			<field name="margin_top">45</field>
+			<field name="margin_bottom">32</field>
+			<field name="margin_left">7</field>
+			<field name="margin_right">7</field>
+			<field name="header_line" eval="False" />
+			<field name="header_spacing">42</field>
+			<field name="dpi">90</field>
+            <field name="report_ids" eval="[(6,0,[ref('enz_masar_jan_new.proforma_invoice_report_id'),ref('enz_dynamic_design_standard.action_report_tax_invoice')])]"/>
+        </record>
+</odoo>
